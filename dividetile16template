@@ -24,30 +24,30 @@ function draw() {
   ellipse(200,400, 399);
   
   //draw diagonals and straight lines - dividing into 8
-  strokeWeight(1)
+  strokeWeight(1);
   line(0,0,400,400);
   line(400,0,0,400);
   line(200,0,200,400);
   line(0,200,400,200);
   
   //draw the second square
-  strokeWeight(0.5)
-  line(0, 200, 200, 0)
-  line(200,0, 400, 200)
-  line(400, 200, 200, 400)
+  strokeWeight(0.5);
+  line(0, 200, 200, 0);
+  line(200,0, 400, 200);
+  line(400, 200, 200, 400);
   line(200,400, 0,200)
   
   // dividing into 16
-  strokeWeight(1)
-  line(284, 400, 116, 0)
-  line(284, 0, 116, 400)
-  line(0, 116, 400, 284)
-  line(400, 116, 0, 284)
+  strokeWeight(1);
+  line(284, 400, 116, 0);
+  line(284, 0, 116, 400);
+  line(0, 116, 400, 284);
+  line(400, 116, 0, 284);
   
   //framing rectangle
   rectMode(CENTER);
-  strokeWeight(0.5)
-  noFill()
+  strokeWeight(0.5);
+  noFill();
   square(200, 200, 282);
 
 }
