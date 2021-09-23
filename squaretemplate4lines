@@ -1,0 +1,25 @@
+// Template - basic square with four intersecting lines
+// Islamic Geometry Basics
+// by Dom Baker
+// dombot5000
+// This example is based on illustrations in Islamic Geometric Patterns by Eric Broug
+// This template forms the basis of many Islamic designs
+
+function setup() { 
+  createCanvas(400, 400);
+}
+
+function draw() { //draw is in a loop
+  background(255, 255, 255)
+  
+  stroke(0);//outline colour
+  strokeWeight(1);
+  ellipse(200,200,400);
+  
+  stroke(0,0,0)
+  line(0,0,400,400);
+  line(400,0,0,400);
+  line(200,0,200,400);
+  line(0,200,400,200);
+  
+}
