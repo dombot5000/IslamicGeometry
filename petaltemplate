@@ -1,0 +1,37 @@
+// Template - basic square with petal
+// Islamic Geometry Basics
+// by Dom Baker
+// dombot5000
+// This example is based on illustrations in Islamic Geometric Patterns by Eric Broug
+// This template forms the basis of many Islamic designs
+
+
+
+function setup() { 
+  createCanvas(400, 400);
+  frameRate(10);
+}
+
+function draw() { 
+  background(255, 255, 255)
+  strokeWeight(0.5);
+  
+  //building the petal
+  ellipse(200,200,399);//399 as 400 looked off though may revisit
+  ellipse(0,200,399);
+  ellipse(400,200,399);
+  ellipse(200,0,399);
+  ellipse(200,400, 399);
+  
+  //diagonals and straight lines
+  line(0,0,400,400);
+  line(400,0,0,400);
+  line(200,0,200,400);
+  line(0,200,400,200);
+  
+  //framing rectangle
+  rectMode(CENTER);
+  noFill()
+  square(200, 200, 282);
+
+}
